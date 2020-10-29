@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+    background-size: cover;  
+    transition:  1s ease-in-out;
+
+}
+
+#time {
+    font-size: 8rem;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 0,5rem;
+    opacity: 0.6;
+}
+
+@media(max-width: 700px) {
+    #time {
+        font-size: 6rem;
+    }
+}
+  
+  .btn {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background: url("https://github.com/Antongron/Momentum/blob/main/img/refresh.png?raw=true");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    margin: 10px;
+  }
+  .btn:hover {
+    filter: grayscale(0.6);
+  }
+  .btn:active,
+  .btn:focus {
+    outline: 0;
+  }
+  .btn:active{
+    transform: scale(1.02)
+  }
